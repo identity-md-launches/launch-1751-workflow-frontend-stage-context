@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#121716"/>
+<path d="m1030 60-90 140h65l-20 110 110-160h-75z" fill="#c5f566"/>
+<g font-family="Arial,Helvetica,sans-serif"><text x="70" y="110" font-size="36" font-weight="600" fill="#c5f566">Rekt Blitz</text>
+<text x="65" y="270" font-size="76" font-weight="700" fill="#f3f5e9" letter-spacing="-3">Trade. Take the lead.</text>
+<text x="70" y="350" font-size="31" fill="#b8c1b5">The last qualifying buyer wins the blitz jackpot.</text>
+<path d="M70 442h1060" stroke="#657064"/>
+<g font-size="28" fill="#f3f5e9"><text x="70" y="525">10-minute rounds</text><text x="485" y="525">IMD prizes</text><text x="820" y="525">Robinhood Chain</text></g></g>
+</svg>

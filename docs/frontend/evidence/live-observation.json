@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-14T16:58:23.900Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scrollWidth": 390,
+  "primaryAction": {
+    "text": "Connect to trade\n↗",
+    "top": 778.125,
+    "bottom": 826.125
+  },
+  "text": "Skip to trade\nRekt Blitz\nConnect\nTrade. Take the lead.\n\nBuy REKTD. Be the last qualifying buyer.\n\nThe blitz jackpot\nWaiting for first buy\n0.004597\nIMD\n10-minute blitz\n10:00\nCurrent leader\nNo leader yet. The next qualifying buy starts the clock.\nMinimum ticket\n1 IMD\nWinner’s share · 60%\n0.0027 IMD\nTrade REKTD\nSlippage\n0.5%\n1%\n2%\n3%\nBuy\nSell\nYou pay\nIMD\nBalance: connect to view\nYou receive\nestimate\n388,385.71048 REKTD\nConnect to trade\n↗\nConnect your wallet to approve and trade.\nTrade details\nUpdated from block 88,527,709 · refreshes every 5 seconds\nRefresh state\nTotal burned\n0.001 IMD\nTotal prizes allocated\n0.003 IMD\nTotal creator fees allocated\n0.0087 IMD\nClose the round\n\nOnce time runs out, anyone can settle. The last leader receives 60%, 20% is burned, and 20% starts the next pot.\n\nSettle round\n\nConnect to settle when the round ends.\n\nYour balances\nIMD\nConnect to view\nREKTD\nConnect to view\nETH · network fees\nConnect to view\nPending payout · IMD\nConnect to view\nRetry my payout\n\nA refused transfer stays claimable here. Retrying sends it only to your connected wallet.\n\nRound history\nRecorded on chain\nRound 1\n0.003 IMD prize\n+\nNewer\nPage 1\nOlder\nHow the blitz works\n01\nBuy to lead\n\nSpend at least the live minimum ticket in IMD to take the lead. Smaller buys still trade and pay fees.\n\n02\nWatch the clock\n\nThe first qualifying buy starts 10 minutes. Each later one adds 2 minutes, with a 10-minute cap from that buy.\n\n03\nSettle the pot\n\nThe leader at expiry gets 60%. Another qualifying buy can replace you before expiry. A trade does not guarantee a prize.\n\nEvery swap charges a 1% IMD hook fee: half to the pot, half to the creator, plus the pool fee. Lifetime totals include allocations whose transfers are pending. Burned IMD goes to the contract’s burn sink; token supply is not reduced.\n\nRekt Blitz\nOn Robinhood Chain\nContract addresses & verification\n\nAmounts are in token units. USD pricing is unavailable.",
+  "resources": 1,
+  "provenance": "MCP Chromium browser, actual dist bytes served over localhost; public live RPC, disconnected wallet. Same-origin iframe creates a true 390 × 844 CSS viewport.",
+  "console": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

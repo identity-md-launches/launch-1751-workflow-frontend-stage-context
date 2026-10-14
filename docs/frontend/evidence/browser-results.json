@@ -1,0 +1,41 @@
+{
+  "runs": [
+    "chromium: disconnected pool estimate and primary action at 390 passed (bottom 780px).",
+    "chromium: EIP-6963 picker, Escape/focus restoration, rejection recovery, wrong-chain safety, unknown-chain add and switch passed.",
+    "chromium: exact approval amounts, receipt lock and timeout recovery, protected buy/sell calldata, zero ETH swap value, wallet rejection and retry passed.",
+    "chromium: expiry/settlement, recipient-bound payout retry, paginated onchain history passed.",
+    "chromium: amount validation, insufficient balance, simulation failure/retry, deployed-code safety gate and wallet RPC fallback passed.",
+    "chromium: 320/390/768/1440 long-value reflow, 200% text resize, wallet sheet, copy fallback, axe accessibility, zero script errors, forbidden routing addresses absent passed.",
+    "chromium: four mobile wallet links preserve current gateway subpath; Coinbase Smart Wallet entry passed.",
+    "chromium: unavailable RPC leaves input/connect usable; keyboard-opened dialog and missing-wallet recovery passed.",
+    "chromium: tampered router ABI fails closed before wallet setup.",
+    "webkit: disconnected pool estimate and primary action at 390 passed (bottom 780px).",
+    "webkit: EIP-6963 picker, Escape/focus restoration, rejection recovery, wrong-chain safety, unknown-chain add and switch passed.",
+    "webkit: exact approval amounts, receipt lock and timeout recovery, protected buy/sell calldata, zero ETH swap value, wallet rejection and retry passed.",
+    "webkit: expiry/settlement, recipient-bound payout retry, paginated onchain history passed.",
+    "webkit: amount validation, insufficient balance, simulation failure/retry, deployed-code safety gate and wallet RPC fallback passed.",
+    "webkit: 320/390/768/1440 long-value reflow, 200% text resize, wallet sheet, copy fallback, axe accessibility, zero script errors, forbidden routing addresses absent passed.",
+    "webkit: four mobile wallet links preserve current gateway subpath; Coinbase Smart Wallet entry passed.",
+    "webkit: unavailable RPC leaves input/connect usable; keyboard-opened dialog and missing-wallet recovery passed.",
+    "webkit: tampered router ABI fails closed before wallet setup."
+  ],
+  "screenshots": [
+    "chromium-390.png",
+    "chromium-320-stress.png",
+    "chromium-390-stress.png",
+    "chromium-768-stress.png",
+    "chromium-1440-stress.png",
+    "chromium-text-200.png",
+    "chromium-wallet.png",
+    "chromium-mobile-wallet.png",
+    "webkit-390.png",
+    "webkit-320-stress.png",
+    "webkit-390-stress.png",
+    "webkit-768-stress.png",
+    "webkit-1440-stress.png",
+    "webkit-text-200.png",
+    "webkit-wallet.png",
+    "webkit-mobile-wallet.png"
+  ],
+  "failures": []
+}

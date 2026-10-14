@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "launchId": "ab566d18-a5f9-4777-8f35-24bc1c07204e",
+  "chainId": 4663,
+  "sourceCommit": "316a2d4649b8022b019c27366b5c2476a9a7ca44",
+  "attestationHash": "528bb797dacd2817b5a7afa65df0d3fd7b6b42096030949ad3beef9b1e91302f",
+  "contracts": [
+    {
+      "name": "RektToken",
+      "address": "0xbb435904b466df0ec859e7143e153fec5824112b",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "abiPath": "abi/RektToken.json"
+    },
+    {
+      "name": "RektJackpotHook",
+      "address": "0xd4c27dd4a8137ccb73db74181a5783ff035060cc",
+      "abiHash": "656cd9e4b4263ff822013dd69e7ce5d61f37398a9aac258a87af23b64f82c755",
+      "abiPath": "abi/RektJackpotHook.json"
+    }
+  ],
+  "assets": [
+    {
+      "path": "abi/RektJackpotHook.json",
+      "sha256": "08b5450a1f93fa7554e59e0d4292ef3bc3af9da44ff79af317b9de63d8e0639f"
+    },
+    {
+      "path": "abi/RektSwapRouter.json",
+      "sha256": "3f5ff4b2daa4f971f5f8041c512749e65df1440ff40657659a6a0dc7ce457379"
+    },
+    {
+      "path": "abi/RektToken.json",
+      "sha256": "9578fcb499b4ba5fac51462a67a2654d9f803e0ea3af9bdb19130ff695808542"
+    },
+    {
+      "path": "assets/ccip-BqmzSRf9.js",
+      "sha256": "df9e513414bb0bee17d2f7dca24eb7789eca079417e29cd5c4a9280bfbbb9888"
+    },
+    {
+      "path": "assets/dist-CpYE77PR.js",
+      "sha256": "7d5c14ab8c6db43006c5a30c7131c91df2ecd381dc155165e9cb605cf2594252"
+    },
+    {
+      "path": "assets/index-CW927-wG.css",
+      "sha256": "7b07ba6f00ebd3442491cd21cac1b207478bc1ea246172df005e2e406dce808e"
+    },
+    {
+      "path": "assets/index-ifd7gDKm.js",
+      "sha256": "2dedf9ef9bfd51d60ab7defb8aefe5262bd4ad02ff325081016f341437fe74e4"
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "fb980dd11c6c9ff2b6999710437846372c80ddc3640860301ac80274fa7f521c"
+    },
+    {
+      "path": "index.html",
+      "sha256": "8ded338135ce332c0d843e4a8bc6355988921949de2b88f30ee005968d226f8f"
+    },
+    {
+      "path": "share.png",
+      "sha256": "44ccad4ee0bcd04064f723f47bc0540761d45b8bd0c97c8e6bbf6f1c03aadd42"
+    },
+    {
+      "path": "wallets/coinbase.svg",
+      "sha256": "74b55347075cbbb2a0292cca0f94459d531afd23586ecfd2fcc670236c590439"
+    },
+    {
+      "path": "wallets/LICENSE.txt",
+      "sha256": "5095037afa1ba03be36e04305c01ec9ee600e14377738a026482b1a888c4e365"
+    },
+    {
+      "path": "wallets/metaMask.svg",
+      "sha256": "892c7dfab8c4ca5682878dda3f42f55a75195d7d365e4adb0832845f3a0a2135"
+    },
+    {
+      "path": "wallets/phantom.svg",
+      "sha256": "f841f8112e131259a2e5123177950099c79487e61e77971f4e193e6c374419eb"
+    },
+    {
+      "path": "wallets/rabby.svg",
+      "sha256": "dcae4de88ebfa10cffa1fe28df13d7c8c0b40736ef2b704f1f2fc348e777e443"
+    }
+  ],
+  "network": {
+    "chainId": 4663,
+    "name": "Robinhood Chain",
+    "testnet": false,
+    "rpcUrls": [
+      "https://robinhood-rpc.publicnode.com",
+      "https://rpc.mainnet.chain.robinhood.com"
+    ],
+    "explorer": "https://robin.etherscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [],
+    "uniswapV4": {
+      "poolManager": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+      "universalRouter": "0x8876789976decbfcbbbe364623c63652db8c0904",
+      "quoter": "0x8dc178efb8111bb0973dd9d722ebeff267c98f94",
+      "stateView": "0xf3334192d15450cdd385c8b70e03f9a6bd9e673b",
+      "positionManager": "0x58daec3116aae6d93017baaea7749052e8a04fa7",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3",
+      "extendedSwapParams": true
+    },
+    "pairToken": {
+      "address": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+      "symbol": "IMD",
+      "name": "Identity.md",
+      "decimals": 18
+    }
+  },
+  "walletAddChain": {
+    "chainId": "0x1237",
+    "chainName": "Robinhood Chain",
+    "rpcUrls": [
+      "https://robinhood-rpc.publicnode.com",
+      "https://rpc.mainnet.chain.robinhood.com"
+    ],
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://robin.etherscan.io"
+    ]
+  }
+}

@@ -1,6 +1,12 @@
 # REKTD Blitz contracts
 
-This is the contract-stage contribution for REKTD on Robinhood Chain (4663): a fixed-supply token, an IMD-denominated last-buyer jackpot hook, a dedicated swap router the hook deploys itself, tests, and ABI exports. The dashboard/IPFS publication and independently authored `launch.json` belong to subsequent stages. Nothing here broadcasts transactions or requires a private key, oracle, keeper, backend signer, or other outside service.
+REKTD on Robinhood Chain (4663) includes a fixed-supply token, an IMD-denominated last-buyer jackpot hook, its dedicated companion swap router, tests, and ABI exports. The contracts below retain their original deployment and economics.
+
+## Frontend
+
+The Vite, React, and TypeScript app is in [web/](web/README.md), with its complete static export in [dist/](dist/index.html). It reads the deployed game, quotes and trades through the explicitly approved companion RektSwapRouter, and supports wallet approvals, settlement, and payout retries. Signing stays in the visitor’s wallet; the frontend contains no private credentials or backend signer.
+
+See [installation, configuration, rebuilding, and preview](web/README.md), [the implemented design](DESIGN.md), and [worker validation and live-chain limitations](docs/frontend/VALIDATION.md). Publication is a separate handoff. The root Foundry configuration, dependencies, and deployed Solidity source are unchanged.
 
 ## Build and test
 

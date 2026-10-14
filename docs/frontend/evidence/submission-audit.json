@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-14T17:02:51.939948+00:00",
+  "method": "Conservative uncompressed sum of all tracked and eligible untracked repository files, including this record; excludes task inputs and disposable test/scratch. This is not a generated Git bundle.",
+  "limitBytes": 8388608,
+  "fileCount": 523,
+  "totalFileBytes": 5567152,
+  "remainingBytes": 2821456,
+  "exportFilesIncludingManifest": 16,
+  "exportBytesIncludingManifest": 833237,
+  "hashedAssets": 15,
+  "allAssetHashesMatch": true,
+  "handoffAndNetworkCopiesMatchInputs": true,
+  "protectedTrackedPathsChanged": [],
+  "trackedPathsChanged": [
+    "README.md"
+  ],
+  "newTopLevelPaths": [
+    "DESIGN.md",
+    "dist",
+    "docs",
+    "web"
+  ],
+  "newDependencyCacheArchiveDirectories": [],
+  "gitSubmodules": 0,
+  "ignoreFilesChanged": false,
+  "sourceAndExportMatchTestedStaging": true,
+  "build": "pass; Vite chunk-size advisory only",
+  "typecheck": "pass",
+  "unitTests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "browserEngines": [
+    "Chromium",
+    "WebKit"
+  ],
+  "browserFailures": [],
+  "tasteChecksPassed": 16,
+  "realTransactionsBroadcast": 0
+}

@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "launchId": "ab566d18-a5f9-4777-8f35-24bc1c07204e",
+  "chainId": 4663,
+  "repoUrl": "https://github.com/identity-md-launches/launch-1745-workflow-contract-stage-context",
+  "sourceCommit": "316a2d4649b8022b019c27366b5c2476a9a7ca44",
+  "attestationHash": "528bb797dacd2817b5a7afa65df0d3fd7b6b42096030949ad3beef9b1e91302f",
+  "manifest": {
+    "kind": "univ4_hook",
+    "hook": {
+      "contract": "RektJackpotHook",
+      "constructorArgs": [
+        "$poolManager",
+        "$owner",
+        "$factory",
+        "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+        "$token"
+      ],
+      "permissions": [
+        "beforeInitialize",
+        "beforeSwap",
+        "afterSwap",
+        "beforeSwapReturnDelta",
+        "afterSwapReturnDelta"
+      ]
+    },
+    "token": {
+      "contract": "RektToken",
+      "name": "REKTD",
+      "symbol": "REKTD",
+      "decimals": 18
+    },
+    "pool": {
+      "pairedCurrency": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+      "fee": 12500,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336"
+    },
+    "notes": "RektJackpotHook is an IMD-denominated last-buyer blitz jackpot. Constructor, in declaration order: IPoolManager manager ($poolManager), address initialOwner ($owner, which is also the immutable creator fee recipient the brief names, 0x08cd4437b077928e7fa09cf7dcdf3f7624743bd2), address launchFactory ($factory), address pairedToken (IMD, 0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127, the pair the request chose), address token ($token, RektToken). RektToken has no constructor arguments and mints its fixed supply to its deployer, the factory. getHookPermissions enables beforeInitialize, beforeSwap, afterSwap, beforeSwapReturnDelta and afterSwapReturnDelta; no liquidity or donate callbacks, so the factory's zero-liquidity fee collect passes untouched. beforeInitialize accepts only the pool manager as caller and only the launch factory as sender, binds the pool once, and requires the sorted REKTD/IMD pair, this hook, LP fee 12500 and tick spacing 60; the hook accepts the listed fee. The factory may open the pool at any valid price; initialPrice above is the reference value and the deployer derives the opening price from the policy's market cap. The hook charges 1% of gross IMD on every swap on top of the 1.25% LP fee: 50 bps to the creator recipient, paid within the same swap transaction after the router settles its input, and 50 bps to jackpotPool held as ERC-6909 IMD claims on the PoolManager. A qualifying buy of at least max(1 IMD, 5% of the pot) makes the router's caller currentLeader and sets roundEndTime to min(previous end + 120 s, now + 600 s). After expiry anyone may call settleRound, or the next swap settles: 60% of the pot to the leader, 20% transferred to 0x000000000000000000000000000000000000dEaD (a source constant used only as a burn sink, not a constructor argument), 20% rolls over. Swaps are only accepted from the companion RektSwapRouter, which the hook's own constructor deploys (constructor: the same pool manager and this hook), so the launch transaction yields a tradeable pool with no later owner action; the router is not a separate manifest contract. The owner's only control, configureRouter, accepts a replacement whose runtime bytecode is identical to that router (immutables included), so it cannot change routing logic or economics. Ownership is two-step and cannot be renounced. A payout that IMD refuses to deliver (creator fee, prize or burn) is parked as a claimable balance backed by the hook's claims and anyone may retry it with claimPayout, so a refused recipient never blocks swaps or settlement. No ETH is handled: fees, prizes and burns are all IMD, and no address in this manifest is a stand-in."
+  },
+  "contracts": [
+    {
+      "name": "RektToken",
+      "address": "0xbb435904b466df0ec859e7143e153fec5824112b",
+      "txHash": "0xd1b25ced1af096dc1f8e4ee7782a94b58090c230a43714f9db85bf17d84648c4",
+      "blockNumber": 88462104,
+      "creationCodeHash": "c3d8af42bf1245c04a17cf214ded50d76009344bcbe8288e676cedbc03791c8e",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee"
+    },
+    {
+      "name": "RektJackpotHook",
+      "address": "0xd4c27dd4a8137ccb73db74181a5783ff035060cc",
+      "txHash": "0xd1b25ced1af096dc1f8e4ee7782a94b58090c230a43714f9db85bf17d84648c4",
+      "blockNumber": 88462104,
+      "creationCodeHash": "0a6794fbfca33629e472aada93cd365c24379a3a2b8eed626d990f53c937ede9",
+      "abiHash": "656cd9e4b4263ff822013dd69e7ce5d61f37398a9aac258a87af23b64f82c755"
+    }
+  ],
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions."
+}
